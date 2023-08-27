@@ -3,12 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./output.css"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
 </head>
-<body>
-    <div class="bg-[#E5E5E5]">
-        <a href="https://adedoyinlorukomi-portfolio.netlify.app/">Portfolio</a>
+<body class="bg-[#E5E5E5]">
+    <div>
+        <!-- <a href="https://adedoyinlorukomi-portfolio.netlify.app/">Home</a> -->
+        <div class="offcanvas offcanvas-start text-white" id="demo" style="width: 250px; background-color: #212B36;">
+            <div class="offcanvas-header mt-2 text-[16px] font-bold">
+                <div>MENU</div>
+                <div>
+                    <button type="button" class=" btn-close text-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="flex flex-col gap-[-8px]">
+                    <div class="flex gap-3 mb-2">
+                        <img src="./img/home.svg" alt="">
+                        <a href="https://adedoyinlorukomi.github.io/A.coutures/" target="_blank" class="text-[14px] text-white no-underline">Home</a>
+                    </div>
+                    <div class="flex gap-3 bg-white bg-opacity-10 pl-2">
+                        <img src="./img/dashboard.svg" alt="">
+                        <p class="pt-3 opacity-50 text-[14px]">Dashboard</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <img src="./img/calendar.svg" alt="">
+                        <p class="pt-3 opacity-50 text-[14px]">Calendar</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <img src="./img/order.svg" alt="">
+                        <p class="pt-3 opacity-50 text-[14px]">Order</p>
+                    </div>
+                   <div class="py-1 pl-[2px] text-[14px] font-semibold">SUPPORT</div>
+                   <div class="flex gap-3">
+                        <img src="./img/messages.svg" alt="">
+                        <p class="pt-3 opacity-50 text-[14px]">Messages</p>
+                        <img src="./img/notification.svg" alt="">
+                    </div>
+                   <div class="flex gap-3">
+                        <img src="./img/chat.svg" alt="">
+                        <p class="pt-3 opacity-50 text-[14px]">Chat</p>
+                    </div>
+                   <div class="flex gap-3">
+                        <img src="./img/static.svg" alt="">
+                        <p class="pt-3 opacity-50 text-[14px]">Static</p>
+                    </div>
+                   <div class="flex gap-3">
+                        <img src="./img/documents.svg" alt="">
+                        <p class="pt-3 opacity-50 text-[14px]">Document</p>
+                    </div>
+                    <div class="py-1 pl-[2px] text-[14px] font-semibold">OTHERS</div>
+                   <div class="flex gap-3">
+                        <img src="./img/settings.svg" alt="">
+                        <p class="pt-3 opacity-50 text-[14px]">Settings</p>
+                    </div>
+                   <div class="flex gap-3">
+                        <img src="./img/logout.svg" alt="">
+                        <p class="pt-3 opacity-50 text-[14px]">Logout</p>
+                    </div>
+                </div>
+            
+            <div class="pt-3 border-t-[1px] border-opacity-20 border-[#E7E7E7] mt-4">
+                <div class="bg-white bg-opacity-10 flex gap-1">
+                    <img src="./img/search.svg" alt="">
+                    <input type="search" placeholder="Search" class="h-5 outline-none bg-transparent">
+                </div>
+                <div class="pt-4 flex gap-3">
+                    <img src="./img/home.svg" alt="">
+                    <div class="flex flex-col gap-1">
+                        <span class="text-[14px] opacity-80">Aria Christian</span>
+                        <span class="text-[10px] opacity-50">ariachristy@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <div class="content">
+        <!-- Search-section -->
+        <div class="bg-white flex justify-between px-[40px] py-2">
+            <div class="flex">
+                <div class="btn" id="content-one" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    <img src="./img/navbar.svg" alt="">
+                </div>
+                <p class="text-3xl font-semibold text-black pt-2">Dashboard</p></div>
+            <div class="flex gap-4">
+                <div class="flex gap-3">
+                    <div class="flex gap-2">
+                        <img src="./img/search.svg" alt="" class="w-min">
+                        <input type="text" placeholder="Type to search" class="h-11 pt-1.5 outline-none bg-transparent">
+                    </div>
+                    <img src="./img/newcalendar.svg" alt="">
+                    <img src="./img/bell.svg" alt="">
+                    <img src="./img/newmessage.svg" alt="">
+                </div>
+                <div class="pt-2 flex gap-3">
+                    <div class="flex flex-col gap-1">
+                        <span class="text-[14px] opacity-80">Aria Christian</span>
+                        <span class="text-[10px] opacity-50">ariachristy@gmail.com</span>
+                    </div>
+                    <img src="./img/newmessage.svg" alt="">
+                    <img src="./img/chevron.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Time period -->
+        <div class="text-[16px] ml-6 my-6 flex gap-4 sticky">
+            <span class="text-[#000000] opacity-[43%]">Last 24 hours</span>
+            <span class="text-[#000000] underline underline-offset-4 text-lg font-semibold">Last one week</span>
+            <span class="text-[#000000] opacity-[43%]">Last two weeks</span>
+            <span class="text-[#000000] opacity-[43%]">Last one months</span>
+            <span class="text-[#000000] opacity-[43%]">Last two months</span>
+        </div>
+        <!-- Inflow and clients -->
+        <div class="w-[80%] mx-auto my-[30px] flex justify-around">
+            <div class=" bg-white w-[310px] rounded-xl">
+                <div class="flex justify-around border-black border-b-[1px] pt-2">
+                    <p class="text-[18px] font-bold pt-2">&#8358; &nbsp;&nbsp; Net Income</p>
+                    <img src="./img/dots.svg" alt="">
+                </div>
+                <div class="flex gap-2 pl-7">
+                    <img src="./img/naira.svg" alt="" width="60" height="60" class="pt-2">
+                    <div class="flex flex-col gap-[1px] mt-2.5">
+                        <span class="text-[#212B36] text-2xl font-bold">&#8358; 576,800</span>
+                        <span class="text-[#637381] text-[16px]">Earned this month</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white w-[310px] rounded-xl">
+                <div class="flex justify-around border-black border-b-[1px] pt-2">
+                    <p class="text-[18px] font-bold pt-2"> &nbsp;&nbsp; New Customers</p>
+                    <img src="./img/dots.svg" alt="">
+                </div>
+                <div class="flex gap-2 pl-7">
+                    <img src="./img/clients.svg" alt="" width="60" height="60">
+                    <div class="flex flex-col gap-[1px] mt-2">
+                        <span class="text-[#212B36] text-2xl font-bold">583</span>
+                        <span class="text-[#637381] text-[16px]">New Clients</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class=" bg-white w-[310px] rounded-xl">
+                <div class="flex justify-around border-black border-b-[1px] pt-2">
+                    <p class="text-[18px] font-bold pt-2"> &nbsp;&nbsp; This week sales</p>
+                    <img src="./img/dots.svg" alt="">
+                </div>
+                <div class="flex gap-2 bg-white pl-7 py-2">
+                    <img src="./img/sales.svg" alt="" width="60" height="60">
+                    <div class="flex flex-col gap-[1px] mt-2">
+                        <span class="text-[#212B36] text-2xl font-bold">5634</span>
+                        <span class="text-[#637381] text-[16px]">New Sales</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[80%] mx-auto my-[30px]" id="grid-container">
+        <div id="grid-one" class="h-[350px] bg-white rounded-2xl flex flex-col py-6 px-6">
+            <div class="flex justify-between">
+                <div class="flex flex-col gap-1.5">
+                    <span class="text-2xl font-medium">Total Sales</span>
+                    <div class="flex gap-2">
+                        <p class="bg-[#90E182] bg-opacity-40 w-min py-[1px] px-3 rounded-3xl text-sm">+8.0%</p>
+                        <p class="opacity-40 pt-[4px] text-xs">From last period</p>
+                    </div>
+                </div>
+                <div class="border-2 border-[#90E182] h-max py-1 px-3 rounded-2xl flex gap-1">
+                    <span class="text-sm">View Report</span>
+                    <img class="h-min pt-2" src="./img/drop.svg" alt="">
+                </div>
+            </div>
+            <div class="self-center mt-6">
+                <img src="./img/graph.svg" alt="">
+            </div>
+        </div>
+        <div id="grid-three" class=" px-3 pt-3 h-[350px] bg-white rounded-xl">
+            <img src="./img/total.svg" alt="">
+        </div>
+        <div id="grid-four" class="bg-white px-3 pt-4 rounded-3xl scale-y-[90%] mt-[-50px] ml-[120px]">
+            <div class="text-lg font-semibold border-b-[1px] border-black pb-2">Top Channels</div>
+            <table class="table table-hover mt-2 text-sm font-medium text-opacity-80">
+                <thead>
+                    <th>Product name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Sold</th>
+                    <th>Profit</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="flex gap-3">
+                            <img src="./img/men-tee2.jpg" alt="" width="70" height="30">
+                            <span>Men shirt</span>
+                        </td>
+                        <td>Clothes</td>
+                        <td>&#8358;5,000</td>
+                        <td>21</td>
+                        <td>&#8358;35,000</td>
+                    </tr>
+                    <tr>
+                        <td class="flex gap-3">
+                            <img src="./img/vintShirt.jpg" alt="" width="70" height="30">
+                            <span>Unisex shirts</span>
+                        </td>
+                        <td>Clothes</td>
+                        <td>&#8358;8,000</td>
+                        <td>20</td>
+                        <td>&#8358;68,000</td>
+                    </tr>
+                    <tr>
+                        <td class="flex gap-3">
+                            <img src="./img/4xl-shirt.jpeg" alt="" width="70" height="30">
+                            <span>4xl shirts</span>
+                        </td>
+                        <td>Clothes</td>
+                        <td>&#8358;10,000</td>
+                        <td>25</td>
+                        <td>&#8358;97,000</td>
+                    </tr>
+                    <tr>
+                        <td class="flex gap-3">
+                            <img src="./img/two-colored.jpg" alt="" width="70" height="30">
+                            <span>Two-colored shirts</span>
+                        </td>
+                        <td>Clothes</td>
+                        <td>&#8358;9,000</td>
+                        <td>10</td>
+                        <td>&#8358;44,000</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div id="grid-two" class="h-[430px] bg-white rounded-xl mt-[-20px]">
+            <div class="flex justify-between px-3 pt-3">
+                <p class="text-xl font-semibold">Products Sale Analytics</p>
+                <div class="border-1 border-[#90E182] h-max py-1 px-1 rounded-2xl flex gap-1">
+                    <span class="text-xs">Weekly</span>
+                    <img class="h-min pt-1.5" src="./img/drop.svg" alt="">
+                </div>
+            </div>
+            <img src="./img/stats.svg" alt="" class="pt-3 mx-auto">
+
+            <div class="mt-4">
+                <div class="flex justify-around">
+                    <div class="flex gap-2">
+                        <img src="./img/dot1.svg" alt="" class="pb-3">
+                        <p class="">Men wears</p>
+                    </div>
+                    <p class="text-[#797979]">35%</p>
+                </div>
+            </div>
+            <div class="">
+                <div class="flex justify-around">
+                    <div class="flex gap-2">
+                        <img src="./img/dot2.svg" alt="" class="pb-3">
+                        <p class="">Unisex wears</p>
+                    </div>
+                    <p class="text-[#C4C8CA]">35%</p>
+                </div>
+            </div>
+            <div class="">
+                <div class="flex justify-around">
+                    <div class="flex gap-2">
+                        <img src="./img/dot3.svg" alt="" class="pb-3">
+                        <p class="">Women wears</p>
+                    </div>
+                    <p class="text-[#609746]">35%</p>
+                </div>
+            </div>
+            <div class="">
+                <div class="flex justify-around">
+                    <div class="flex gap-2">
+                        <img src="./img/dot4.svg" alt="" class="pb-3">
+                        <p class="">Vintage Scarfs</p>
+                    </div>
+                    <p class="text-[#100F0E]">35%</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="footer" class="bg-black text-white px-[55px]">
+
+        <div id="Join our mailing list" class="self-end mb-7">
+          <p class="text-[40px]">Join our mailing list📩</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Your Email Address">
+              <button class="border-[white] border-2 text-white" type="submit">Join Us</button>
+            </div>
+        </div>
+
+        <div id="support, products, help and solution" class="flex justify-around">
+          <div class="text-center">
+            <p class="animate-bounce cursor-pointer">OUR COMPANY</p>
+            <p class="hover:animate-pulse cursor-pointer">About</p>
+            <p class="hover:animate-pulse cursor-pointer">Contact us</p>
+            <p class="hover:animate-pulse cursor-pointer">Blog</p>
+            <p class="hover:animate-pulse cursor-pointer">Referral Policy</p>
+            <p class="hover:animate-pulse cursor-pointer">Privary Policy</p>
+            <p class="hover:animate-pulse cursor-pointer">FAQ</p>
+            <p class="hover:animate-pulse cursor-pointer">Vacancies</p>
+            <p class="hover:animate-pulse cursor-pointer">Return policy</p>
+          </div>
+          <div class="text-center">
+            <p class="animate-bounce cursor-pointer">PRODUCTS</p>
+            <p class="hover:animate-pulse cursor-pointer">Vintage Scarfs</p>
+            <p class="hover:animate-pulse cursor-pointer">Men clothes</p>
+            <p class="hover:animate-pulse cursor-pointer">Women Clothes</p><br>
+            <p class="animate-bounce cursor-pointer">SERVICES</p>
+            <p class="hover:animate-pulse cursor-pointer">Spa service</p>
+            <p class="hover:animate-pulse cursor-pointer">Seaming service</p>
+            <p class="hover:animate-pulse cursor-pointer">Salon</p>
+          </div>
+          <div class="text-center">
+            <p class="mt-5 animate-bounce cursor-pointer">HELP AND SOLUTION</p>
+            <div class=" hover:scale-110"><a href="#" class="no-underline text-white">support@Acoutures.com</a></div>
+            <p class="mt-8 animate-bounce cursor-pointer">SOCIALS</p>
+            <div class="flex gap-2">
+              <img src="./img/instagram.svg" alt="">
+              <p>Instagram</p>
+            </div>
+            <div class="flex gap-2">
+              <img src="./img/twitter.svg" alt="">
+              <p>Twitter</p>
+            </div>
+            <div class="flex gap-2">
+              <img src="./img/pininterest.svg" alt="">
+              <p>PinInterest</p>
+            </div>
+          </div>
+        </div>
     </div>
 </body>
 </html>

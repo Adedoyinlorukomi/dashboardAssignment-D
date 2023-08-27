@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 3%;
+    grid-template-areas: 
+    "one one three"
+    "two four four";
+}
+
+#grid-one{
+    grid-area: one;
+}
+#grid-two{
+    grid-area: two;
+}
+#grid-three{
+    grid-area: three;
+}
+#grid-four{
+    grid-area: four;
+}
