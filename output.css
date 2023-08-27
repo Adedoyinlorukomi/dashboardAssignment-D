@@ -2736,6 +2736,50 @@ body{
   grid-area: four;
 }
 
+#inflow1{
+  animation: inflow 15s 1s infinite ease-in-out;
+}
+
+#inflow2{
+  animation: inflow 18s 3s infinite linear;
+}
+
+@keyframes inflow {
+  from{
+    scale: 90%;
+  }
+
+  to{
+    scale: 100%;
+  }
+}
+
+#time{
+  animation: time 4s 2s 2 linear;
+}
+
+@keyframes time {
+  0%{
+    padding-left: 0px;
+  }
+
+  25%{
+    padding-left: 40;
+  }
+
+  50%{
+    padding-left: 0px;
+  }
+
+  75%{
+    padding-left: 40px;
+  }
+
+  100%{
+    padding-left: 0px;
+  }
+}
+
 @media (max-width: 639px) {
   .sm\:container {
     width: 100%;

@@ -113,16 +113,16 @@
             </div>
         </div>
         <!-- Time period -->
-        <div class="text-[16px] ml-6 my-6 flex gap-4 sticky">
-            <span class="text-[#000000] opacity-[43%]">Last 24 hours</span>
+        <div class="text-[16px] ml-6 my-6 flex gap-4" id="time">
+            <span class="text-[#000000] opacity-[43%] hover:scale-110 cursor-pointer">Last 24 hours</span>
             <span class="text-[#000000] underline underline-offset-4 text-lg font-semibold">Last one week</span>
-            <span class="text-[#000000] opacity-[43%]">Last two weeks</span>
-            <span class="text-[#000000] opacity-[43%]">Last one months</span>
-            <span class="text-[#000000] opacity-[43%]">Last two months</span>
+            <span class="text-[#000000] opacity-[43%] hover:scale-110 cursor-pointer">Last two weeks</span>
+            <span class="text-[#000000] opacity-[43%] hover:scale-110 cursor-pointer">Last one months</span>
+            <span class="text-[#000000] opacity-[43%] hover:scale-110 cursor-pointer">Last two months</span>
         </div>
         <!-- Inflow and clients -->
         <div class="w-[80%] mx-auto my-[30px] flex justify-around">
-            <div class=" bg-white w-[310px] rounded-xl">
+            <div class=" bg-white w-[310px] rounded-xl" id="inflow1">
                 <div class="flex justify-around border-black border-b-[1px] pt-2">
                     <p class="text-[18px] font-bold pt-2">&#8358; &nbsp;&nbsp; Net Income</p>
                     <img src="./img/dots.svg" alt="">
@@ -131,11 +131,11 @@
                     <img src="./img/naira.svg" alt="" width="60" height="60" class="pt-2">
                     <div class="flex flex-col gap-[1px] mt-2.5">
                         <span class="text-[#212B36] text-2xl font-bold">&#8358; 576,800</span>
-                        <span class="text-[#637381] text-[16px]">Earned this month</span>
+                        <span class="text-[#637381] text-[16px]">Earned this week</span>
                     </div>
                 </div>
             </div>
-            <div class="bg-white w-[310px] rounded-xl">
+            <div class="bg-white w-[310px] rounded-xl" id="inflow2">
                 <div class="flex justify-around border-black border-b-[1px] pt-2">
                     <p class="text-[18px] font-bold pt-2"> &nbsp;&nbsp; New Customers</p>
                     <img src="./img/dots.svg" alt="">
@@ -149,7 +149,7 @@
                 </div>
             </div>
             
-            <div class=" bg-white w-[310px] rounded-xl">
+            <div class=" bg-white w-[310px] rounded-xl" id="inflow1">
                 <div class="flex justify-around border-black border-b-[1px] pt-2">
                     <p class="text-[18px] font-bold pt-2"> &nbsp;&nbsp; This week sales</p>
                     <img src="./img/dots.svg" alt="">
@@ -283,7 +283,7 @@
                 <div class="flex justify-around">
                     <div class="flex gap-2">
                         <img src="./img/dot4.svg" alt="" class="pb-3">
-                        <p class="">Vintage Scarfs</p>
+                        <p class="">Vintage Scarves</p>
                     </div>
                     <p class="text-[#100F0E]">35%</p>
                 </div>
